@@ -4,6 +4,10 @@
     padding: 0;
     box-sizing: border-box;
     font-family: "Ubuntu";
+	color: white;
+}
+img{
+	max-width: 100%;
 }
 .show-menu img{
     max-height: 20px;
@@ -14,7 +18,7 @@ header {
     justify-content: space-between;
     background-color: rgb(0, 0, 0);
 }
-ul {
+header ul {
 	list-style-type:none;
 	margin:0;
 	padding:0;
@@ -22,7 +26,7 @@ ul {
 }
 
 /*Crea la listahorizontal con espacio*/
-li {
+header li {
 	display:inline-block;
 	float: left;
 	margin-right: 1px;
@@ -131,9 +135,59 @@ input[type=checkbox]:checked ~ #menu{
     }
 
 }
-main{
+body{
     background-image: url(./img/Star-wars-logo-new-tall.webp);
     background-position: center center;
     background-size: cover;
+	background-attachment: fixed;
     height: 100vh;
 }
+section#vacia{
+	height: 100vh;
+}
+section#introduccion{
+	backdrop-filter: blur(2px) saturate(100%);
+	border-bottom: #bdb7b7 2px;
+}
+.inicio{
+	width: 95%;
+	margin: auto;
+	display: flex;
+	justify-content: space-between;
+}
+.bienvenida{
+	width: 55%;
+	font-size: 1.5rem;
+	line-height: 2.2rem;
+}
+.bienvenida h1{
+	color: #f8e617;
+	font-size: 2.3rem;
+	text-align: center;
+	margin-bottom: 5%;
+}
+.bienvenida ul{
+	margin-left: 5%;
+	font-size: 1.3rem;
+	margin-bottom: 5%;
+}
+.bienvenida ul li{
+	color: rgb(211, 209, 209);
+}
+#pamarillo{
+	color: #f8e617;
+	margin-top: 5%;
+}
+.bienvenidaimagen{
+	width: 43%;
+	border-radius: 20px;
+	-webkit-filter: drop-shadow(15px 15px 15px #bdb7b7);
+    filter: drop-shadow(0px 0px 13px #bdb7b7);
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+.bienvenidaimagen img{
+	border-radius: 20px;
+}
+
