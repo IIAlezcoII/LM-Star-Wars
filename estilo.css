@@ -6,8 +6,22 @@
     font-family: "Ubuntu";
 	color: white;
 }
+:root{
+	--amarillo: #f8e617;
+	--titulo: 2.3rem;
+	--texto: 1.5rem;
+	--espaciado: 2.2rem;
+}
 img{
 	max-width: 100%;
+}
+main{
+	width: 85%;
+	margin: auto;
+}
+.container{
+	width: 95%;
+	margin: auto;
 }
 .show-menu img{
     max-height: 20px;
@@ -22,7 +36,6 @@ header ul {
 	list-style-type:none;
 	margin:0;
 	padding:0;
-	
 }
 
 /*Crea la listahorizontal con espacio*/
@@ -154,6 +167,7 @@ section#introduccion{
 	margin: auto;
 	display: flex;
 	justify-content: space-between;
+	background-color: black;
 }
 .bienvenida{
 	width: 55%;
@@ -161,7 +175,7 @@ section#introduccion{
 	line-height: 2.2rem;
 }
 .bienvenida h1{
-	color: #f8e617;
+	color: var(--amarillo);
 	font-size: 2.3rem;
 	text-align: center;
 	margin-bottom: 5%;
@@ -182,7 +196,7 @@ section#introduccion{
 	width: 43%;
 	border-radius: 20px;
 	-webkit-filter: drop-shadow(15px 15px 15px #bdb7b7);
-    filter: drop-shadow(0px 0px 13px #bdb7b7);
+    filter: drop-shadow(0px 0px 5px #bdb7b7);
 	display: flex;
 	justify-content: center;
 	align-items: center;
@@ -190,4 +204,108 @@ section#introduccion{
 .bienvenidaimagen img{
 	border-radius: 20px;
 }
+.georgelucas{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	margin-top: 10rem;
+	width: 100%;
+}
+.blurimg{
+	border-radius: 20px;
+	-webkit-filter: drop-shadow(15px 15px 15px #bdb7b7);
+    filter: drop-shadow(0px 0px 5px #bdb7b7);
+}
+section#descubre h2{
+	color: var(--amarillo);
+	text-align: center;
+	margin-top: 5rem;
+	font-size: var(--titulo);
+	background-color: black;
+}
+section#descubre p{
+	font-size: 1.7rem;
+	line-height: 2.4rem;
+	margin-top: 5rem;
+	text-align: center;
+}
+
+.blurtexto{
+	backdrop-filter: blur(2px) saturate(100%);
+}
+.biografia{
+	background-color: black;
+}
+.revan{
+	margin-top: 10rem;
+	width: 90%;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+section#historia h2{
+	color: var(--amarillo);
+	font-size: var(--titulo);
+	margin-top: 5rem;
+	margin-bottom: 5rem;
+	text-align: center;
+	background-color: black;
+}
+section#historia p{
+	font-size: var(--texto);
+	line-height: 2.4rem;
+}
+.historiatext:first-child{
+	background-color: black;
+}
+.rakata{
+	width: 50%;
+	margin: auto;
+	margin-top: 5rem;
+	margin-bottom: 5rem;
+}
+.arepublica{
+	display: flex;
+	justify-content: space-evenly;
+}
+.arepublica p{
+	width: 60%;
+	background-color: black;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+.sithsantiguos{
+	display: flex;
+	flex-wrap: wrap;
+	width: 40%;
+}
+#revanmalak img{
+	width: 90%;
+}
+#vitiatebane img{
+	width: 45%;
+}
+#vitiatebane{
+	display: flex;
+}
+.guerrasclon{
+	display: flex;
+	margin-top: 5rem;
+}
+.guerrasclon p{
+	background-color: black;
+	width: 40%;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	text-align: right;
+}
+.arebelde{
+	width: 60%;
+}
+
+
+
+
 
