@@ -167,7 +167,7 @@ section#introduccion{
 	margin: auto;
 	display: flex;
 	justify-content: space-between;
-	background-color: black;
+	background-color: rgba(0, 0, 0, 0.575);
 }
 .bienvenida{
 	width: 55%;
@@ -234,29 +234,31 @@ section#descubre p{
 	backdrop-filter: blur(2px) saturate(100%);
 }
 .biografia{
-	background-color: black;
+	background-color: rgba(0, 0, 0, 0.575);
 }
 .revan{
 	margin-top: 10rem;
 	width: 90%;
-	display: flex;
-	justify-content: center;
-	align-items: center;
+	
+}
+.historiatext>p{
+	background-color: rgba(0, 0, 0, 0.575);
+	text-align: center;
 }
 section#historia h2{
-	color: var(--amarillo);
+	color: red;
 	font-size: var(--titulo);
+	display: inline;
+	background-color: black;
+}
+.h2conflicto{
 	margin-top: 5rem;
 	margin-bottom: 5rem;
 	text-align: center;
-	background-color: black;
 }
 section#historia p{
 	font-size: var(--texto);
 	line-height: 2.4rem;
-}
-.historiatext:first-child{
-	background-color: black;
 }
 .rakata{
 	width: 50%;
@@ -270,7 +272,7 @@ section#historia p{
 }
 .arepublica p{
 	width: 60%;
-	background-color: black;
+	background-color: rgba(0, 0, 0, 0.575);
 	display: flex;
 	justify-content: center;
 	align-items: center;
@@ -294,7 +296,7 @@ section#historia p{
 	margin-top: 5rem;
 }
 .guerrasclon p{
-	background-color: black;
+	background-color: rgba(0, 0, 0, 0.575);
 	width: 40%;
 	display: flex;
 	justify-content: center;
@@ -303,6 +305,29 @@ section#historia p{
 }
 .arebelde{
 	width: 60%;
+}
+section#explora{
+	margin-top: 10rem;
+}
+.explorah2{
+	margin-bottom: 5rem;
+	text-align: center;
+}
+.explorah2 h2{
+	color: whitesmoke;
+	font-size: var(--titulo);
+	display: inline;
+	background-color: black
+}
+.accesodirecto{
+	display: flex;
+	justify-content: space-evenly;
+}
+.accesodirecto>div{
+	width: 20%;
+}
+.novelimg img{
+	width: 100%;
 }
 
 
