@@ -122,6 +122,26 @@ input[type=checkbox]:checked ~ #menu{
 
 /* estilos responsive */
 
+@media screen and (max-width: 1200px){
+	.inicio{
+		width: 100%;
+		flex-wrap: wrap;
+	}
+	.bienvenida{
+		width: 100%;
+	}
+	.bienh1{
+		width: 100%;
+	}
+	.bienh2{
+		width: 100%;
+	}
+	.bienvenidaimagen{
+		width: 60%;
+		text-align: center;
+	}
+}
+
 @media screen and (max-width : 768px){
 	/*Hace que el dropdown links aparescan en linea */
 	ul {
@@ -155,7 +175,7 @@ body{
 	background-attachment: fixed;
     height: 100vh;
 }
-section#vacia{
+section.vacia{
 	height: 100vh;
 }
 section#introduccion{
@@ -322,12 +342,47 @@ section#explora{
 .accesodirecto{
 	display: flex;
 	justify-content: space-evenly;
+	text-align: center;
 }
 .accesodirecto>div{
 	width: 20%;
 }
+.accesodirecto h3{
+	font-size: 2rem;
+}
+.accesodirecto img{
+	transition: transform 0.3s ease-in-out;
+}
+.accesodirecto img:hover{
+	transform: scale(1.1);
+}
+footer{
+	text-align: center;
+	background-color: black;
+}
+.redes > div > a{
+	width: 1.5rem;
+}
+.redes > div{
+	display: flex;
+	justify-content: space-around;
+	align-items: center;
+	width: 40%;
+	margin: auto;
+	margin-bottom: 1rem;
+}
+.redes h4{
+	font-size: 1.3rem;
+	margin-bottom: 1rem;
+}
+.terminos{
+	width: 60%;
+	margin: 1% auto;
+	display: flex;
+	justify-content: space-around;
+}
 
-
+	
 
 
 
