@@ -11,6 +11,7 @@
 	--titulo: 2.3rem;
 	--texto: 1.5rem;
 	--espaciado: 2.2rem;
+	--difuminado: rgba(0, 0, 0, 0.575);
 }
 img{
 	max-width: 100%;
@@ -118,56 +119,6 @@ input[type=checkbox]{
 input[type=checkbox]:checked ~ #menu{
     display: block;
 }
-
-
-/* estilos responsive */
-
-@media screen and (max-width: 1200px){
-	.inicio{
-		width: 100%;
-		flex-wrap: wrap;
-	}
-	.bienvenida{
-		width: 100%;
-	}
-	.bienh1{
-		width: 100%;
-	}
-	.bienh2{
-		width: 100%;
-	}
-	.bienvenidaimagen{
-		width: 60%;
-		text-align: center;
-	}
-}
-
-@media screen and (max-width : 768px){
-	/*Hace que el dropdown links aparescan en linea */
-	ul {
-		position: static;
-		display: none;
-	}
-	/*Crea espacio vertical */
-	li {
-		margin-bottom: 1px;
-	}
-	/* crea todo el menu links  ancho full */
-	ul li, li a {
-		width: 100%;
-	}
-	/*Display '.muestra-menu' link*/
-	.show-menu {
-		display:block;
-	}
-    header{
-        display: block;
-        text-align: center;
-        position: sticky;
-        top:0;
-    }
-
-}
 body{
     background-image: url(./img/Star-wars-logo-new-tall.webp);
     background-position: center center;
@@ -194,11 +145,12 @@ section#introduccion{
 	font-size: 1.5rem;
 	line-height: 2.2rem;
 }
-.bienvenida h1{
+.introh1 h1{
 	color: var(--amarillo);
 	font-size: 2.3rem;
 	text-align: center;
 	margin-bottom: 5%;
+	text-shadow: white 1px 0 1px;
 }
 .bienvenida ul{
 	margin-left: 5%;
@@ -359,6 +311,7 @@ section#explora{
 footer{
 	text-align: center;
 	background-color: black;
+	margin-top: 10%;
 }
 .redes > div > a{
 	width: 1.5rem;
@@ -380,6 +333,199 @@ footer{
 	margin: 1% auto;
 	display: flex;
 	justify-content: space-around;
+}
+
+.caratulas h1{
+	font-size: var(--titulo);
+	color: var(--amarillo);
+	text-align: center;
+	margin-bottom: 5%;
+	background-color: var(--difuminado);
+}
+.poriginales{
+	width: 100%;
+	display: flex;
+	justify-content: space-between;
+}
+.poriginales div{
+	width: 25%;
+	height: 35%;
+	object-fit: cover;
+}
+.poriginales div img{
+	display: block;
+}
+.poriginales div h3{
+	font-size: var(--texto);
+	text-align: center;
+	margin-top: 3%;
+}
+.caratulas p{
+	font-size: var(--texto);
+	background-color: var(--difuminado);
+	text-align: center;
+	margin-top: 5%;
+	line-height: var(--espaciado);
+}
+.caratulas h2{
+	font-size: var(--titulo);
+	color: var(--amarillo);
+	text-align: center;
+	margin: 5% 5%;
+	background-color: var(--difuminado);
+}
+.person{
+	width: 23%;
+}
+.person img{
+	width: 100%;
+}
+
+
+/* estilos responsive */
+/* resoluciones a cumplir: 1200px / 992 / 768 / 576*/
+
+@media screen and (max-width: 1200px){
+	.inicio{
+		width: 100%;
+		flex-wrap: wrap;
+	}
+	.bienvenida{
+		width: 100%;
+		display: flex;
+		flex-wrap: wrap;
+	}
+	.preparate{
+		width: 50%;
+	}
+	.bienh2{
+		width: 50%;
+	}
+	.bienvenidaimagen{
+		width: 65%;
+		margin: auto;
+		margin-top: 5%;
+	}
+}
+@media screen and (max-width: 992px){
+	.preparate{
+		width: 100%;
+	}
+	.bienh2{
+		width: 100%;
+	}
+	.arepublica{
+		flex-wrap: wrap;
+	}
+	.arepublica p{
+		width: 100%;
+	}
+	.sithsantiguos{
+		width: 63%;
+	}
+	#revanmalak{
+		width: 100%;
+		text-align: center;
+	}
+	#vitiatebane{
+		justify-content: space-between;
+	}
+	.guerrasclon{
+		flex-wrap: wrap;
+	}
+	.arebelde{
+		width: 80%;
+		margin: auto;
+	}
+	.guerrasclon > p{
+		width: 100%;
+		text-align: center;
+	}
+	.accesodirecto{
+		flex-wrap: wrap;
+	}
+	.accesodirecto > div{
+		width: 34%;
+	}
+}
+
+@media screen and (max-width : 768px){
+	/*Hace que el dropdown links aparescan en linea */
+	ul {
+		position: static;
+		display: none;
+	}
+	/*Crea espacio vertical */
+	li {
+		margin-bottom: 1px;
+	}
+	/* crea todo el menu links  ancho full */
+	ul li, li a {
+		width: 100%;
+	}
+	/*Display '.muestra-menu' link*/
+	.show-menu {
+		display:block;
+	}
+    header{
+        display: block;
+        text-align: center;
+        position: sticky;
+        top:0;
+    }
+	.bienvenidaimagen{
+		width: 80%;
+	}
+	.rakata{
+		width: 66%;
+	}
+	.sithsantiguos{
+		width: 79%;
+	}
+	#vitiatebane{
+		display: flex;
+		flex-wrap: wrap;
+	}
+	#vitiatebane img{
+		width: 50%;
+	}
+	.arepublica p{
+		font-size: 2.2rem;
+	}
+	.arebelde{
+		width: 100%;
+		margin-bottom: 5%;
+	}
+	
+	.accesodirecto > div{
+		width: 57%;
+	}
+	.accesodirecto > div > h3{
+		margin: 5% 5%;
+	}
+}
+@media screen and (max-width: 576px){
+	.bienvenidaimagen{
+		width: 100%;
+	}
+	.georgelucas{
+		width: 100%;
+	}
+	.revan{
+		width: 100%;
+	}
+	.rakata{
+		width: 100%;
+	}
+	.sithsantiguos{
+		flex-wrap: wrap;
+	}
+	#vitiatebane{
+		width: 100%;
+	}
+	#vitiatebane img{
+		width: 47%;
+	}
 }
 
 	
