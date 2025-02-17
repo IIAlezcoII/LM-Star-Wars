@@ -346,11 +346,17 @@ footer{
 	width: 100%;
 	display: flex;
 	justify-content: space-between;
+	background-color: var(--difuminado);
 }
 .poriginales div{
 	width: 25%;
 	height: 35%;
 	object-fit: cover;
+	cursor: pointer;
+	transition: opacity 0.6s ease;
+}
+.caratulas:hover > :not(:hover){
+	opacity: 0.5s;
 }
 .poriginales div img{
 	display: block;
@@ -362,7 +368,7 @@ footer{
 }
 .caratulas p{
 	font-size: var(--texto);
-	background-color: var(--difuminado);
+	background-color: black;
 	text-align: center;
 	margin-top: 5%;
 	line-height: var(--espaciado);
@@ -379,6 +385,91 @@ footer{
 }
 .person img{
 	width: 100%;
+}
+.caratulas h3{
+	background-color: black;
+}
+.seriescarteles{
+	display: flex;
+	justify-content: space-around;
+	flex-wrap: wrap;
+}
+.seriescarteles img{
+	width: 29%;
+	margin-bottom: 2%;
+}
+.juegos{
+	background-color: rgb(0, 0, 0);
+}
+.juegos h1{
+	color: var(--amarillo);
+	font-size: var(--titulo);
+	margin-top: 2%;
+	text-align: center;
+}
+.kayvess{
+	display: flex;
+	justify-content: space-between;
+	width: 90%;
+	margin: auto;
+	align-items: center;
+}
+.kayvess p{
+	width: 70%;
+	font-size: 2.2rem;
+}
+.kayportada{
+	width: 30%;
+}
+.comprar{
+	margin-top: 5%;
+	background-color: black;
+}
+.comprar h2{
+	font-size: 1rem;
+	text-align: center;
+}
+.plataformas{
+	width: 25%;
+	margin: auto;
+	display: flex;
+	justify-content: space-around;
+}
+.survivorimg{
+	margin-top: 5%;
+}
+#jedisurvivor h2{
+	color: var(--amarillo);
+	font-size: var(--titulo);
+	margin-top: 2%;
+	text-align: center;
+}
+.caljuegos{
+	display: flex;
+	justify-content: space-around;
+}
+.caljuegos img{
+	width: 40%;
+	margin: auto;
+}
+.comprar h3{
+	text-align: center;
+}
+section#otros h2{
+	font-size: var(--titulo);
+	color: var(--amarillo);
+	text-align: center;
+	background-color: var(--difuminado);
+	margin-top: 5%;
+}
+.listajuegos{
+	display: flex;
+	justify-content: space-around;
+	flex-wrap: wrap;
+}
+.listajuegos img{
+	width: 40%;
+	margin-top: 2%;
 }
 
 
