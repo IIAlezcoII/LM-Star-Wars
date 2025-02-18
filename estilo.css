@@ -334,7 +334,6 @@ footer{
 	display: flex;
 	justify-content: space-around;
 }
-
 .caratulas h1{
 	font-size: var(--titulo);
 	color: var(--amarillo);
@@ -379,6 +378,17 @@ footer{
 	text-align: center;
 	margin: 5% 5%;
 	background-color: var(--difuminado);
+}
+.pjprin{
+	width: 100%;
+	display: flex;
+	justify-content: space-between;
+	background-color: var(--difuminado);
+}
+.pjprin h3{
+	font-size: var(--texto);
+	text-align: center;
+	margin-top: 3%;
 }
 .person{
 	width: 23%;
@@ -466,11 +476,104 @@ section#otros h2{
 	display: flex;
 	justify-content: space-around;
 	flex-wrap: wrap;
+	background-color: var(--difuminado);
 }
 .listajuegos img{
 	width: 40%;
 	margin-top: 2%;
 }
+section#libros h2{
+	font-size: var(--titulo);
+	color: var(--amarillo);
+	text-align: center;
+	background-color: var(--difuminado);
+	margin: 5% 5%;
+}
+.libros{
+	display: flex;
+	justify-content: space-between;
+	flex-wrap: wrap;
+	background-color: black;
+}
+.libros img{
+	width: 30%;
+	margin-bottom: 2%;
+}
+section#especiales{
+	background-color: rgba(0, 0, 0, 0.863);
+}
+section#especiales h1{
+	color: var(--amarillo);
+	font-size: var(--titulo);
+	margin-top: 2%;
+	text-align: center;
+	margin-bottom: 3%;
+}
+.merchesp{
+	display: flex;
+	justify-content: space-evenly;
+}
+.merchuno{
+	width: 50%;
+}
+.merchimg{
+	width: 80%;
+}
+.merchuno h3{
+	text-align: center;
+	margin: 2% 2%;
+}
+.merchuno h4{
+	color: var(--amarillo)
+}
+.boton{
+	padding: 1%;
+	background-color: rgb(68, 3, 3);
+	text-decoration: none;
+	border: 1px solid whitesmoke;
+	display: inline-block;
+	margin-top: 1%;
+	margin-bottom: 5%;
+}
+section#legos h2{
+	font-size: var(--titulo);
+	color: var(--amarillo);
+	text-align: center;
+	margin: 5% 5%;
+}
+section#legos{
+	background-color: rgba(27, 27, 27, 0.938);
+}
+.legos{
+	display: flex;
+	justify-content: space-between;
+}
+.item{
+	width: 48%;
+}
+.itemimg{
+	width: 90%;
+}
+.item h3{
+	text-align: center;
+}
+.item h4{
+	margin-bottom: 2%;
+	color: var(--amarillo);
+	margin: 3% 3%;
+}
+section#funkos h2{
+	font-size: var(--titulo);
+	color: var(--amarillo);
+	text-align: center;
+	margin: 5% 5%;
+}
+section#funkos{
+	background-color: rgba(27, 27, 27, 0.938);
+}
+
+
+
 
 
 /* estilos responsive */
@@ -496,6 +599,32 @@ section#otros h2{
 		width: 65%;
 		margin: auto;
 		margin-top: 5%;
+	}
+	.kayvess{
+		flex-wrap: wrap;
+	}
+	.kayvess p{
+		width: 100%;
+		text-align: center;
+	}
+	.kayportada{
+		width: 100%;
+		align-items: center;
+		display: flex;
+		justify-content: center;
+	}
+	.kayportada img{
+		width: 50%;
+	}
+	.caljuegos{
+		display: flex;
+		justify-content: space-around;
+	}
+	.caljuegos img{
+		width: 51%;
+	}
+	.listajuegos img{
+		width: 47%;
 	}
 }
 @media screen and (max-width: 992px){
@@ -536,8 +665,32 @@ section#otros h2{
 		flex-wrap: wrap;
 	}
 	.accesodirecto > div{
+		width: 30%;
+	}
+	.poriginales div{
 		width: 34%;
 	}
+	.poriginales{
+		flex-wrap: wrap;
+		justify-content: space-around;
+	}
+	.pjprin{
+		flex-wrap: wrap;
+		justify-content: space-around;
+	}
+	.pjprin h3{
+		text-align: left;
+	}
+	.person{
+		width: 28%;
+	}
+	.kayvess p{
+		font-size: 1.6rem;
+	}
+	.listajuegos img{
+		width: 50%;
+	}
+	
 }
 
 @media screen and (max-width : 768px){
@@ -594,6 +747,33 @@ section#otros h2{
 	.accesodirecto > div > h3{
 		margin: 5% 5%;
 	}
+	.poriginales div{
+		width: 40%;
+	}
+	.person{
+		width: 43%;
+	}
+	.pjprin{
+		justify-content: space-evenly;
+	}
+	.seriescarteles{
+		flex-wrap: wrap;
+	}
+	.seriescarteles img{
+		width: 42%;
+	}
+	.listajuegos img{
+		width: 86%;
+	}
+	.libros img{
+		width: 46%;
+	}
+	.caljuegos{
+		flex-wrap: wrap;
+	}
+	.caljuegos img{
+		width: 80%;
+	}
 }
 @media screen and (max-width: 576px){
 	.bienvenidaimagen{
@@ -616,6 +796,30 @@ section#otros h2{
 	}
 	#vitiatebane img{
 		width: 47%;
+	}
+	.poriginales div{
+		width: 69%;
+	}
+	.person{
+		width: 50%;
+	}
+	.seriescarteles img{
+		width: 50%;
+	}
+	.kayportada img{
+		width: 80%;
+	}
+	.caljuegos img{
+		width: 100%;
+	}
+	.listajuegos img{
+		width: 100%;
+	}
+	.libros{
+		justify-content: space-around;
+	}
+	.libros img{
+		width: 75%;
 	}
 }
 
