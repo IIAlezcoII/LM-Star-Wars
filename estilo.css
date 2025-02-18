@@ -511,13 +511,10 @@ section#especiales h1{
 }
 .merchesp{
 	display: flex;
-	justify-content: space-evenly;
+	justify-content: space-between;
 }
 .merchuno{
-	width: 50%;
-}
-.merchimg{
-	width: 80%;
+	width: 40%;
 }
 .merchuno h3{
 	text-align: center;
@@ -570,6 +567,54 @@ section#funkos h2{
 }
 section#funkos{
 	background-color: rgba(27, 27, 27, 0.938);
+}
+#bodymerch{
+	background-image: url(./img/introdisney+.gif);
+	background-position: center center;
+	background-size: cover;
+}
+.salon{
+	width: 90%;
+	margin: auto;
+}
+.verdisney{
+	display: flex;
+	justify-content: space-between;
+	width: 90%;
+	margin: auto;
+	margin-top: 3%;
+}
+.disni{
+	background-color: rgba(0, 0, 0, 0.705);
+	margin-top: 7%;
+}
+.disneyimagen{
+	width: 30%;
+}
+.disneyimagen img{
+	border-radius: 20px;
+}
+.encontrar{
+	width: 50%;
+	margin: auto;
+	text-align: center;
+}
+.encontrar h2{
+	font-size: var(--texto);
+}
+.encontrar a{
+	padding: 3%;
+	background-color: #02d6e8;
+	border-radius: 10px;
+	display: inline-block;
+	text-decoration: none;
+	font-size: 1.2rem;
+	text-shadow: 2px black;
+	margin-top: 2%;
+	transition: transform 0.7s ease ease-in-out;
+}
+.encontrar a:hover{
+	transform: scale(1.1);
 }
 
 
