@@ -211,9 +211,8 @@ section#descubre p{
 .revan{
 	margin-top: 10rem;
 	width: 90%;
-	
 }
-.historiatext>p{
+.historiatext > p{
 	background-color: rgba(0, 0, 0, 0.575);
 	text-align: center;
 }
@@ -514,14 +513,15 @@ section#especiales h1{
 	justify-content: space-between;
 }
 .merchuno{
-	width: 40%;
+	width: 45%;
 }
 .merchuno h3{
 	text-align: center;
 	margin: 2% 2%;
 }
 .merchuno h4{
-	color: var(--amarillo)
+	color: var(--amarillo);
+	margin: 2% 2%;
 }
 .boton{
 	padding: 1%;
@@ -611,12 +611,29 @@ section#funkos{
 	font-size: 1.2rem;
 	text-shadow: 2px black;
 	margin-top: 2%;
-	transition: transform 0.7s ease ease-in-out;
+	transition: transform 0.3s ease ease-in-out;
 }
 .encontrar a:hover{
 	transform: scale(1.1);
 }
-
+.item a{
+	transition: transform 0.3s ease ease-in-out;
+}
+.item a:hover{
+	transform: scale(1.1);
+}
+.poriginales div img{
+	transition: transform 0.3s ease-in-out;
+}
+.poriginales div img:hover{
+	transform: scale(1.1);
+}
+.pjprin div img{
+	transition: transform 0.3s ease-in-out;
+}
+.pjprin div img:hover{
+	transform: scale(1.1);
+}
 
 
 
@@ -735,7 +752,21 @@ section#funkos{
 	.listajuegos img{
 		width: 50%;
 	}
-	
+	.merchesp{
+		display: flex;
+		flex-wrap: wrap;
+	}
+	.merchuno{
+		width: 57%;
+		margin: auto;
+	}
+	.legos{
+		display: flex;
+		flex-wrap: wrap;
+	}
+	.item{
+		width: 30%;
+	}
 }
 
 @media screen and (max-width : 768px){
@@ -819,6 +850,34 @@ section#funkos{
 	.caljuegos img{
 		width: 80%;
 	}
+	.merchuno{
+		width: 85%;
+	}
+	.item{
+		width: 38%;
+		margin: auto;
+	}
+	.verdisney{
+		flex-wrap: wrap;
+	}
+	.disneyimagen{
+		width: 50%;
+		order: 2;
+		margin: auto;
+		text-align: center;
+	}
+	.disneyimagen img{
+		width: 50%;
+	}
+	.encontrar{
+		width: 51%;
+		margin-bottom: 5%;
+	}
+	.encontrar h2{
+		font-size: 1.4rem;
+		margin-bottom: 4%;
+	}
+
 }
 @media screen and (max-width: 576px){
 	.bienvenidaimagen{
@@ -865,6 +924,21 @@ section#funkos{
 	}
 	.libros img{
 		width: 75%;
+	}
+	.merchuno{
+		width: 100%;
+	}
+	.item{
+		width: 100%;
+	}
+	.itemimg{
+		margin: auto;
+	}
+	.disneyimagen img{
+		width: 70%;
+	}
+	.salon{
+		width: 100%;
 	}
 }
 
