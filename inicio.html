@@ -6,26 +6,48 @@
     <title>Star Wars | Inicio</title>
     <link rel="stylesheet" href="estilo.css">
     <link rel="icon" type="image/x-icon" href="./img/Logo-imperio-galáctico.png">
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js" integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
+    <script>
+        $(document).ready(function() {
+        $('.nav__toggle').on('click', function() {
+            $('.nav').toggleClass('display');
+        });
+        $('.nav__toggle').on('click', function() {
+            $('.menu__item').toggleClass('display');
+        });
+        $('.nav__toggle').on('click', function() {
+            $('.menu').toggleClass('escon');
+        });
+        });
+    </script>
 </head>
 <body>
     <header>
-        <div class="logo"><img src="./img/sw_nav_logo_mobile_659fef1a_1_99c6e87c.png" alt=""></div>
-        <nav>
-            <label for="show-menu" class="show-menu"><img src="./menu.png" alt=""></label>
-            <input type="checkbox" id="show-menu" role="button">
-                <ul id="menu">
-                <li><a href="./inicio.html">Star Wars</a></li>
-                <li>
-                    <a href="./peliculas.html">Peliculas y más</a>
-                </li>
-                <li>
-                    <a href="./juegos.html">Libros y otros</a>
-                </li>
-                <li><a href="#">Tienda oficial</a></li>
-                
+        <nav class="nav">
+            <div class="nav__logo"><a href="#">
+                <img src="./img/sw_nav_logo_mobile_659fef1a_1_99c6e87c.png" alt=""></a>
+            </div>
+            <span class="nav__toggle">
+                <span class="menu-activador-linea"></span>
+                <span class="menu-activador-linea"></span>
+                <span class="menu-activador-linea"></span>
+            </span>
+            <ul class="menu escon">
+              <li class="menu__item">
+                <a href="#">Star Wars</a>
+              </li>
+              <li class="menu__item">
+                <a href="./peliculas.html">Peliculas y series</a>
+              </li>
+              <li class="menu__item">
+                <a href="./juegos.html">Juegos y más</a>
+              </li>
+              <li class="menu__item">
+                <a href="./merchandising.html">Tienda ofiical</a>
+              </li>
             </ul>
         </nav>
-    </header>
+      </header>
     <main>
         <section class="vacia"></section>
         <section id="introduccion">
@@ -114,25 +136,25 @@
             <div class="accesodirecto container">
                 <div class="pelisacceso">
                     <div class="pelimg blurimg">
-                        <img src="./img/carteleria/peliculas/ep4.jpeg" alt="">
+                        <a href="./peliculas.html"><img src="./img/carteleria/peliculas/ep4.jpeg" alt=""></a>
                     </div>
                     <h3>Películas</h3>
                 </div>
                 <div class="seriesacceso">
                     <div class="serieimg blurimg">
-                        <img src="./img/carteleria/series/serieclonewars.jpeg" alt="">
+                        <a href="./peliculas.html"><img src="./img/carteleria/series/serieclonewars.jpeg" alt=""></a>
                     </div>
                     <h3>Series</h3>
                 </div>
                 <div class="novelacceso">
                     <div class="novelimg blurimg">
-                        <img src="./img/carteleria/libros/thrawn.jpg" alt="">
+                        <a href="./juegos.html"><img src="./img/carteleria/libros/thrawn.jpg" alt=""></a>
                     </div>
                     <h3>Novelas</h3>
                 </div>
                 <div class="juegoacceso">
                     <div class="juegoimg blurimg">
-                        <img src="./img/carteleria/juegos/cartelvertical.jpeg" alt="">
+                        <a href="./juegos.html"><img src="./img/carteleria/juegos/cartelvertical.jpeg" alt=""></a>
                     </div>
                     <h3>Juegos</h3>
                 </div>
@@ -149,7 +171,9 @@
                 </div>
             </div>
             <div class="terminos">
-                <a href="https://disneytermsofuse.com/">Términos de uso</a><a href="https://support.disney.com/hc/en-us/articles/360000829466-Legal-Notices">Información sobre contenido adicional</a><a href="https://privacy.thewaltdisneycompany.com/en/">Política de privacidad</a>
+                <a href="https://disneytermsofuse.com/">Términos de uso</a>
+                <a href="https://support.disney.com/hc/en-us/articles/360000829466-Legal-Notices">Información sobre contenido adicional</a>
+                <a href="https://privacy.thewaltdisneycompany.com/en/">Política de privacidad</a>
             </div>
             <p>TM & © Lucasfilm Ltd. All Rights Reserved</p>
         </footer>
